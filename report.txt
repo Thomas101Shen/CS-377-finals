@@ -1,0 +1,15 @@
+The graph is in graph.py. I used different libraries in graph.py and model.py. The models I am referring to are in model.py
+
+a. Between lag1, 2, 3, 4, and 5 they all share similiar numerical properties (STD, Variance, mean) and graphically they follow similiar patterns as the weeks progress.
+
+b. lag1 seems to be the only statistically significant predictor, as it has a P value below 5%
+
+c. according to the confusion matrix there was a lot of alpha errors. However, when the model predicted a 1, it was very accurate. There was a lot of type 1 errors but not type 2. The accuracy score was 52.0147%.
+
+d. The accuracy score was 54.808%. However, this model's predictions were all over the place--lots of both type 1 and type 2 errors.
+
+
+E F and G
+https://stackoverflow.com/questions/38015181/accuracy-score-valueerror-cant-handle-mix-of-binary-and-continuous-target
+
+According to the stackoverflow I should not be using regressions for classification predictors. Considering that Naive Bayes makes an assumption that all the features are independent, which is false, I assume that KNN would be the most accurate model predictor.
